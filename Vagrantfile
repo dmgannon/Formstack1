@@ -25,6 +25,7 @@ Vagrant.configure(VAGRANT_API_VERSION) do |config|
         v.name = GUEST_HOSTNAME
     end
 
+
     # forward agent for ansible access
     config.ssh.forward_agent = true
 
