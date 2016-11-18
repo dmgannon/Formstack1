@@ -1,4 +1,9 @@
 <?php
 
+require_once 'controller/userscontroller.php';
 
-phpinfo();
+$controller = new UsersController();
+
+$controller->handleRequest();
+
+?>
