@@ -4,8 +4,11 @@ During the vagrant set up, I had problems with provisioning. There is a known ss
 
 After 'vagrant up', I did these commands:
 $ eval `ssh-agent`
+
 $ ssh-add
+
 $ ssh-add -l
+
 $ ssh vagrant
 
 This allowed me to login to the server and copy the provisioning part in the Vagrantfile you supported.
