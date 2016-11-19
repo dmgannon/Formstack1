@@ -8,9 +8,9 @@ environments:
     production:
         adapter: mysql
         host: localhost
-        name: production_db
-        user: root
-        pass: ''
+        name: my_app
+        user: my_app
+        pass: secret
         port: 3306
         charset: utf8
 
@@ -26,8 +26,8 @@ environments:
     testing:
         adapter: mysql
         host: localhost
-        name: testing_db
-        user: root
-        pass: ''
+        name: my_app
+        user: my_app
+        pass: secret
         port: 3306
         charset: utf8
