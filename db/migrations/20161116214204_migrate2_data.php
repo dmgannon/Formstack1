@@ -9,7 +9,6 @@ class Migrate2Data extends AbstractMigration
      */
     public function up()
     {
-        // Insert some data
         $rows = [
             [
               'email'    => "Danielle.Gannon@formstack.com",
@@ -35,7 +34,6 @@ class Migrate2Data extends AbstractMigration
         $table = $this->table('users');
         $table->insert($rows);
         $table->saveData();
-
     }
 
     /**

@@ -3,18 +3,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>
-        <?php print htmlentities($title) ?>
+        <?php print htmlentities($title)?>
         </title>
     </head>
     <body>
         <?php
-        if ( $errors ) {
-            print '<ul class="errors">';
-            foreach ( $errors as $field => $error ) {
-                print '<li>'.htmlentities($error).'</li>';
+            if ($errors) {
+                print '<ul class="errors">';
+                foreach ($errors as $field => $error)
+                {
+                    print '<li>'.htmlentities($error).'</li>';
+                }
+                print '</ul>';
             }
-            print '</ul>';
-        }
         ?>
         <form method="POST" action="">
             <label for="email">Email:</label><br/>
@@ -33,6 +34,5 @@
             <input type="hidden" name="form-submitted" value="1" />
             <input type="submit" value="Submit" />
         </form>
-         
     </body>
 </html>

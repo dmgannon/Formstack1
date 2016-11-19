@@ -25,7 +25,6 @@
             <br/>
             <input type="hidden" name="form-submitted" value="1" />
             <input type="submit" value="Submit" />
-        </form>
-         
+        </form>  
     </body>
 </html>
